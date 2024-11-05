@@ -1,7 +1,36 @@
-waiting-list-site/
-├── index.html
-├── style.css
-├── script.js
-└── assets/
-    ├── fonts/       # Any custom fonts
-    └── images/      # Background images or icons
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waiting List - Underworld Access</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background with Glitch Overlay -->
+    <div class="background-glitch"></div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <h1 class="glitch-text">Access Pending...</h1>
+        
+        <!-- Command-Line Style Form -->
+        <div class="terminal">
+            <span class="prompt">/underground> </span>
+            <input type="text" id="emailInput" placeholder="Enter email for exclusive access..." />
+            <button id="submitButton">Join</button>
+        </div>
+        
+        <!-- Countdown Timer -->
+        <div id="countdown">
+            <p>Decrypting Soon...</p>
+            <span id="timer">00:00:00</span>
+        </div>
+
+        <!-- Cryptic Message -->
+        <p class="cryptic">Awaiting Authentication... Hidden codes await those who seek.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
